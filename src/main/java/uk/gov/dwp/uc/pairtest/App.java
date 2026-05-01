@@ -18,12 +18,13 @@ public class App {
 
             ticketService.purchaseTickets(
                     1L,
-                    new TicketTypeRequest(TicketTypeRequest.Type.ADULT, 2),
-                    new TicketTypeRequest(TicketTypeRequest.Type.CHILD, 3),
+                    new TicketTypeRequest(TicketTypeRequest.Type.ADULT, 1),
+                    new TicketTypeRequest(TicketTypeRequest.Type.ADULT, 1),
+                    new TicketTypeRequest(TicketTypeRequest.Type.CHILD, 1),
                     new TicketTypeRequest(TicketTypeRequest.Type.INFANT, 1)
             );
 
-            System.out.println("Purchase completed successfully.");
+            System.out.println("Ticket Purchase completed successfully.");
 
         } catch (InvalidAccountIDException ex) {
             System.out.println("Invalid account: " + ex.getMessage());
