@@ -60,3 +60,4 @@ The implementation ensures that:
 - Infants are excluded from seat reservation.
 - Payment is only taken for adult and child tickets.
 - Seats are only reserved for adult and child tickets.
+- There must be a corresponding adult for an infant i.e number of adults must equal number of infants
