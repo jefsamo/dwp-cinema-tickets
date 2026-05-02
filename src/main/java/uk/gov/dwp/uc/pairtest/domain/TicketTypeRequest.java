@@ -4,12 +4,20 @@ package uk.gov.dwp.uc.pairtest.domain;
  * Immutable Object
  */
 
-public class TicketTypeRequest {
+public final class TicketTypeRequest {
 
-    private int noOfTickets;
-    private Type type;
+    private final int noOfTickets;
+    private final Type type;
 
     public TicketTypeRequest(Type type, int noOfTickets) {
+        if (type == null) {
+            throw new IllegalArgumentException("Ticket type cannot be null");
+        }
+
+        if (noOfTickets <= 0) {
+            throw new IllegalArgumentException("Number of tickets must be greater than zero");
+        }
+
         this.type = type;
         this.noOfTickets = noOfTickets;
     }
@@ -23,7 +31,6 @@ public class TicketTypeRequest {
     }
 
     public enum Type {
-        ADULT, CHILD , INFANT
+        ADULT, CHILD, INFANT
     }
-
 }
