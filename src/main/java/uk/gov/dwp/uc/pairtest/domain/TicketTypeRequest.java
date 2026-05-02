@@ -10,14 +10,6 @@ public final class TicketTypeRequest {
     private final Type type;
 
     public TicketTypeRequest(Type type, int noOfTickets) {
-        if (type == null) {
-            throw new IllegalArgumentException("Ticket type cannot be null");
-        }
-
-        if (noOfTickets <= 0) {
-            throw new IllegalArgumentException("Number of tickets must be greater than zero");
-        }
-
         this.type = type;
         this.noOfTickets = noOfTickets;
     }
