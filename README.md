@@ -61,3 +61,41 @@ The implementation ensures that:
 - Payment is only taken for adult and child tickets.
 - Seats are only reserved for adult and child tickets.
 - There must be a corresponding adult for an infant i.e number of adults must equal number of infants
+
+## Prerequisites
+
+Before running the project, make sure you have the following installed:
+
+- Java
+- Maven
+- Git
+
+You can check by running:
+
+```bash
+java -version
+mvn -version
+git --version
+```
+
+## How to Clone the Repository
+
+Clone the repository using:
+
+```bash
+git clone https://github.com/jefsamo/dwp-cinema-tickets.git
+```
+
+Move into the project folder:
+
+```bash
+cd dwp-cinema-tickets
+```
+## How to Run the tests
+
+Run this command in your terminal:
+```bash
+mvn test
+```
+
+
