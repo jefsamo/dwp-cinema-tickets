@@ -24,7 +24,7 @@ public class App {
                     new TicketTypeRequest(TicketTypeRequest.Type.INFANT, 1)
             );
 
-            System.out.println("Ticket Purchase completed successfully.");
+            System.out.println("Tickets purchase completed successfully.");
 
         } catch (InvalidAccountIDException ex) {
             System.out.println("Invalid account: " + ex.getMessage());
